@@ -14,6 +14,8 @@ O ORDEP Plus é um projeto desenvolvido em R para classificar pesquisadores com 
 
 - **log.r**: Contém as funções `checkEnvironment` e `showSupportInfo` para verificar bibliotecas carregadas, pacotes não encontrados, arquivos de origem encontrados e não encontrados, e exibir informações de suporte na aplicação.
 
+- **functions.r**: Este arquivo contém a função `classify_researcher` para classificar os pesquisadores com base nos critérios definidos.
+
 ## 🚀 Versão Inicial (1.0.0)
 
 ### Funcionalidades:
@@ -28,4 +30,17 @@ O ORDEP Plus é um projeto desenvolvido em R para classificar pesquisadores com 
 
 - **Interface Amigável:** Apresenta um dashboard intuitivo com abas para cada funcionalidade e um rodapé com informações da versão.
 
+## 📊 Fonte de Dados
+
+Os dados utilizados para a classificação dos pesquisadores são provenientes do arquivo dataClassificacao.csv, que contém as seguintes colunas:
+
+- **id:** Identificação única do pesquisador.
+- **name:** Nome do pesquisador.
+- **article_A1 a article_A4:** Número de artigos publicados em diferentes categorias (A1 a A4).
+- **article_B1 a article_B4:** Número de artigos publicados em diferentes categorias (B1 a B4).
+- **guidance_d_c:** Número de orientações em nível de doutorado concluídas.
+- **guidance_m_c:** Número de orientações em nível de mestrado concluídas.
+- **patent:** Número de patentes registradas.
+- **software:** Número de softwares desenvolvidos.
+- **first_doc:** Ano de obtenção do primeiro doutorado.
 
